@@ -14,9 +14,27 @@ public class Pet {
                 return; //end program!
 }
 
-        System.out.println("Enter your favorite color (Either red, blue, or green):")
+        System.out.println("Enter your favorite color (Either red, blue, or green):");
         String color = scanner.nextLine().toLowerCase();
-        if (color != "red" || )
+        if (!color.equals("red") && !color.equals("blue") && !color.equals("green")) {
+                System.out.println("please enter a real color!");
+                return;
+        }
+
+        System.out.println("Enter your favorite season (winter, spring, summer, fall):");
+        String season = scanner.nextLine().toLowerCase();
+        if (!season.equals("winter") && !season.equals("spring") && !season.equals("summer") && !season.equals("fall")) {
+                System.out.println("please enter a real season!");
+                return;
+        }
+        
+        String pet;
+        if (color.equals( "blue") && (season.equals("fall")) {
+                
+                pet="alligator";
+            }
+            
+        
 
     }
 }
