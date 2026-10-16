@@ -11,6 +11,7 @@ public class Pet {
         String name = scanner.nextLine().toLowerCase();
          if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0, 1)) == -1) {
                 System.out.println("please give me your real name!");
+                scanner.close();
                 return; //end program!
 }
 
@@ -18,6 +19,7 @@ public class Pet {
         String color = scanner.nextLine().toLowerCase();
         if (!color.equals("red") && !color.equals("blue") && !color.equals("green")) {
                 System.out.println("please enter a real color!");
+                scanner.close();
                 return;
         }
 
@@ -25,6 +27,7 @@ public class Pet {
         String season = scanner.nextLine().toLowerCase();
         if (!season.equals("winter") && !season.equals("spring") && !season.equals("summer") && !season.equals("fall")) {
                 System.out.println("please enter a real season!");
+                scanner.close();
                 return;
         }
         
@@ -56,6 +59,7 @@ public class Pet {
             }
 
             System.out.println("Your perfect pet is a " + pet + "!");
+            scanner.close();
     }
 }
 
