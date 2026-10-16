@@ -12,7 +12,7 @@ public class Pet {
          if ("abcdefghijklmnopqrstuvwxyz".indexOf(name.substring(0, 1)) == -1) {
                 System.out.println("please give me your real name!");
                 scanner.close();
-                return; //end program!
+                return;
 }
 
         System.out.println("Enter your favorite color (Either red, blue, or green):");
