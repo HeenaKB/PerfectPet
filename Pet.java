@@ -39,9 +39,9 @@ public class Pet {
                 pet="alligator";
             } else if (color.equals("blue") && season.equals("spring")) {
                 pet = "ostrich";
-            } else if (color.equals("green") && vowel && season.equals("winter")) {
+            } else if (color.equals("green") && consonant && season.equals("winter")) {
                 pet = "giraffe";
-            } else if (color.equals("green") && !season.equals("fall") && !(consonant && season.equals("winter"))) {
+            } else if (color.equals("green") && !season.equals("fall")) {
                 pet = "dog";
             } else if (color.equals("red") && vowel) {
                 pet = "porcupine";
@@ -55,7 +55,7 @@ public class Pet {
                 pet = "pet rock";
             }
 
-            System.out.println("Your perfect per is a " + pet + "!");
+            System.out.println("Your perfect pet is a " + pet + "!");
     }
 }
 
