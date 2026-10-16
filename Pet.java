@@ -1,6 +1,6 @@
 //Name: Heena KB
 //Date: 10/15/26
-//This program assigns a pet to fit a person's favorite things! In other words, their perfect pet. It asks the user about thier name, favorite color, and favorite season, then uses a set of rules to decide which pet best fits them.
+//This program assigns a pet to fit a person's favorite things! In other words, their perfect pet. It asks the user about thier name, favorite color, and favorite season, then uses a list of rules to choose which pet fits them the best.
 
 import java.util.*;
 
