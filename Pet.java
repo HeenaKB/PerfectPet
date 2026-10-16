@@ -29,13 +29,33 @@ public class Pet {
         }
         
         String pet;
-        if (color.equals( "blue") && (season.equals("fall")) {
+
+        boolean vowel = "aeiou".indexOf(name.charAt(0)) >= 0;
+        boolean consonant = !vowel;
+
+
+        if (color.equals( "blue") && season.equals("fall")) {
                 
                 pet="alligator";
+            } else if (color.equals("blue") && season.equals("spring")) {
+                pet = "ostrich";
+            } else if (color.equals("green") && vowel && season.equals("winter")) {
+                pet = "giraffe";
+            } else if (color.equals("green") && !season.equals("fall") && !(consonant && season.equals("winter"))) {
+                pet = "dog";
+            } else if (color.equals("red") && vowel) {
+                pet = "porcupine";
+            } else if (color.equals("red")) {
+                pet = "panda";
+            } else if (season.equals("summer") && !color.equals("green") && !color.equals("red")) {
+                pet = "pony";
+            } else if (color.equals("blue") && consonant && !season.equals("summer") && !season.equals("spring")) {
+                pet = "axolotl";
+            } else {
+                pet = "pet rock";
             }
-            
-        
 
+            System.out.println("Your perfect per is a " + pet + "!");
     }
 }
 
