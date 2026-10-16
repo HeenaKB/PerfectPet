@@ -38,7 +38,6 @@ public class Pet {
 
 
         if (color.equals( "blue") && season.equals("fall")) {
-                
                 pet="alligator";
             } else if (color.equals("blue") && season.equals("spring")) {
                 pet = "ostrich";
